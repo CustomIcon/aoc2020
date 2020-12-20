@@ -8,7 +8,8 @@ expenses = all_expenses = list(combinations(data, 2))
 def sums_of_2020(values):
     return sum(values) == 2020
 
-#filter results for all expenses with the function
+
+# filter results for all expenses with the function
 result = list(filter(sums_of_2020, all_expenses))
 
 # assigning the value
