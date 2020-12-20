@@ -1,8 +1,10 @@
-from part1 import expenses, sums_of_2020
+from part1 import expenses, sums_of_2020, data
 from itertools import combinations
 
 # making Tuples
-result = list(filter(sums_of_2020,list(combinations(expenses, 3))))
+all_expenses = list(combinations(data, 3))
 
+for r in list(filter(sums_of_2020, all_expenses)):
+    first, second, third = r
 
-print(result)
+print(first * second * third)
